@@ -18,7 +18,7 @@ async function searchCountry(countryName) {
         
         // Fetch bordering countries
         let bordersHtml = '';
-        if (country.borders.length > 0){
+        if (country.borders?.length > 0){
             for (let i = 0; i < country.borders.length; i++) {
             const code = country.borders[i];
             const responseBorders = await fetch(`https://restcountries.com/v3.1/alpha/${code}`);
