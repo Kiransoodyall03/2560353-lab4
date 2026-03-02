@@ -1,0 +1,30 @@
+#loading-spinner {
+    /* Your styling */
+    animation: spin 1s linear infinite; /* Required */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#country-info {
+    background-color: bisque;
+    padding: auto;
+    border-color: brown;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+}
+
+#bordering-countries {
+     display: grid; /* or display: flex */
+}
+
+#error-message {
+     color: red;
+}
+
+.hidden {
+    display: none;
+}
