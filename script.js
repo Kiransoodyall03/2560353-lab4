@@ -1,7 +1,7 @@
 async function searchCountry(countryName) {
     try {
         // Show loading spinner
-        document.getElementById('loading-spinner').style.display = 'block';
+        document.getElementById('loading-spinner').classList.remove('hidden');
         // Fetch country data
         const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
         const data = await response.json();
@@ -44,7 +44,7 @@ async function searchCountry(countryName) {
         `;
     } finally {
         // Hide loading spinner
-        document.getElementById('loading-spinner').style.display = 'none';
+        document.getElementById('loading-spinner').classList.add('hidden');
     }
 }
 

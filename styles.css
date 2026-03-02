@@ -18,7 +18,10 @@
 }
 
 #bordering-countries {
-     display: grid; /* or display: flex */
+     display: grid; 
+     align-items: center;
+     padding: auto;
+     
 }
 
 #error-message {
