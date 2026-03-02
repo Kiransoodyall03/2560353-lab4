@@ -1,5 +1,10 @@
 #loading-spinner {
-    /* Your styling */
+    width: 60px;
+    height: 60px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #8b4513;
+    border-radius: 50%;
+    margin: 40px auto;
     animation: spin 1s linear infinite; /* Required */
 }
 
@@ -10,22 +15,49 @@
 
 #country-info {
     background-color: bisque;
-    padding: auto;
-    border-color: brown;
+    padding: 20px;
+    border: 2px solid brown;
     border-radius: 10px;
     height: 500px;
     width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow-y: auto;
+}
+
+/* MAIN COUNTRY IMAGE */
+#country-info img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    display: block;
+    margin: 10px auto;
+    object-fit: contain;
 }
 
 #bordering-countries {
-     display: grid; 
-     align-items: center;
-     padding: auto;
-     
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* BORDER COUNTRY IMAGES */
+#bordering-countries img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
 }
 
 #error-message {
-     color: red;
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .hidden {

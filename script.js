@@ -1,6 +1,7 @@
 async function searchCountry(countryName) {
     try {
         // Show loading spinner
+        document.getElementById('error-message').classList.remove('hidden');
         document.getElementById('loading-spinner').classList.remove('hidden');
         // Fetch country data
         const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
